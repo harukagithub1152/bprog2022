@@ -1,0 +1,229 @@
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-05-19 15:41:38.147933665
+>>> 23 + 5
+28
+2022-05-19 15:54:27.364397619
+>>> 3 + 2 * 5
+13
+2022-05-19 15:55:02.529391275
+>>> 5 - 4 - 8
+-7
+2022-05-19 15:55:52.504008811
+>>> sqrt 2
+1.4142135623730951
+2022-05-19 15:59:56.840754083
+>>> double 3
+
+<interactive>:5:1: error: Variable not in scope: double :: t0 -> t
+2022-05-19 16:02:20.635708444
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-06-09 14:55:21.065036585
+>>> 2 + 3 * 4
+14
+2022-06-09 14:58:40.205546333
+>>> (2 + 3) * 4
+20
+2022-06-09 15:00:44.647767559
+>>> :i sprt
+
+<interactive>:1:1: error: Not in scope: ‘sprt’
+2022-06-09 15:01:02.998542402
+>>> :i sqrt
+type Floating :: * -> Constraint
+class Fractional a => Floating a where
+  ...
+  sqrt :: a -> a
+  ...
+  	-- Defined in ‘GHC.Float’
+2022-06-09 15:01:58.959848182
+>>> sqrt (3 ^ 2 + 4 ^ 2)
+5.0
+2022-06-09 15:05:18.058781456
+>>> sqrt (25 :: Int)
+
+<interactive>:6:1: error:
+    • No instance for (Floating Int) arising from a use of ‘sqrt’
+    • In the expression: sqrt (25 :: Int)
+      In an equation for ‘it’: it = sqrt (25 :: Int)
+2022-06-09 15:08:21.149663122
+>>> sqrt (25 :: Double)
+5.0
+2022-06-09 15:09:23.140765481
+>>> sqrt 25
+5.0
+2022-06-09 15:10:05.708505104
+>>> head [1, 2, 3]
+1
+2022-06-09 15:47:04.205258087
+>>> head [3, 1, 4, 1, 5]
+3
+2022-06-09 15:47:27.65164287
+>>> head []
+*** Exception: Prelude.head: empty list
+2022-06-09 15:48:33.081012524
+>>> hoge = [3, 1, 4, 1, 5] :: [Int]
+2022-06-09 15:50:38.412103464
+>>> hoge
+[3,1,4,1,5]
+2022-06-09 15:51:00.788835596
+>>> head hoge
+3
+2022-06-09 15:51:30.393855734
+>>> tail hoge
+[1,4,1,5]
+2022-06-09 15:51:36.398343919
+>>> tail []
+*** Exception: Prelude.tail: empty list
+2022-06-09 15:52:43.785086652
+>>> hoge !! 0
+3
+2022-06-09 15:55:21.853866345
+>>> hoge !! 2
+4
+2022-06-09 15:56:24.876318823
+>>> take 3 hoge
+[3,1,4]
+2022-06-09 15:57:52.124389025
+>>> hoge
+[3,1,4,1,5]
+2022-06-09 15:57:55.684065494
+>>> drop 3 hoge
+[1,5]
+2022-06-09 15:58:06.14347228
+>>> hoge 5 hoge
+
+<interactive>:22:1: error:
+    • Couldn't match expected type: t0 -> [Int] -> t
+                  with actual type: [Int]
+    • The function ‘hoge’ is applied to two value arguments,
+        but its type ‘[Int]’ has none
+      In the expression: hoge 5 hoge
+      In an equation for ‘it’: it = hoge 5 hoge
+    • Relevant bindings include it :: t (bound at <interactive>:22:1)
+2022-06-09 15:58:25.010340019
+>>> hoge !! 5
+*** Exception: Prelude.!!: index too large
+2022-06-09 15:59:17.606451154
+>>> take 10 hoge
+[3,1,4,1,5]
+2022-06-09 15:59:25.108639734
+>>> drop 10 hoge
+[]
+2022-06-09 15:59:54.845271363
+>>> length hoge
+5
+2022-06-09 16:01:10.234775149
+>>> length []
+0
+2022-06-09 16:01:27.516899574
+>>> sum hoge
+14
+2022-06-09 16:02:06.340092937
+>>> product hoge
+60
+2022-06-09 16:02:41.268007185
+>>> hoge ++ hoge
+[3,1,4,1,5,3,1,4,1,5]
+2022-06-09 16:04:58.065684455
+>>> reverse hoge
+[5,1,4,1,3]
+2022-06-09 16:05:35.998627332
+>>> :e src/First.hs
+   1  module First where
+   2  
+   3  dobule :: Int -> Int
+   4  dobule x = x + x
+Ok, no modules loaded.
+2022-06-09 16:07:49.165905933
+>>> :load src/First.hs
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-09 16:07:49.237687175
+>>> double 3 + 3
+
+<interactive>:34:1: error:
+    • Variable not in scope: double :: t0 -> a
+    • Perhaps you meant ‘dobule’ (line 4)
+2022-06-09 16:08:01.532754753
+>>> :e src/First.hs
+   1  module First where
+   2  
+   3  dobule :: Int -> Int
+   4  dobule x = x + x
+Ok, one module loaded.
+2022-06-09 16:09:26.520194361
+>>> :load src/First.hs
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-09 16:09:26.621281003
+>>> double 3 + 3
+
+<interactive>:37:1: error:
+    • Variable not in scope: double :: t0 -> a
+    • Perhaps you meant ‘dobule’ (line 4)
+2022-06-09 16:09:44.673552953
+>>> double 3 + 3
+
+<interactive>:38:1: error:
+    • Variable not in scope: double :: t0 -> a
+    • Perhaps you meant ‘dobule’ (line 4)
+2022-06-09 16:17:48.034520224
+>>> :e src/First.hs
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-09 16:19:58.97527908
+>>> :l src/First.hs
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-09 16:19:59.071441387
+>>> double 3 + 3
+9
+2022-06-09 16:29:43.661921138
+>>> double (3 + 3)
+12
+2022-06-09 16:30:02.213922738
+>>> : qwit
+target ‘qwit’ is not a module name or a source file
+2022-06-09 16:30:27.629825082
+>>> : gwit
+target ‘gwit’ is not a module name or a source file
+2022-06-09 16:30:52.489938733
+>>> :e
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+Ok, one module loaded.
+2022-06-09 16:37:06.433873491
+>>> Quadruple 2
+
+<interactive>:46:1: error:
+    • Data constructor not in scope: Quadruple :: t0 -> t
+    • Perhaps you meant variable ‘quadruple’ (line 7)
+2022-06-09 16:37:37.26063322
+>>> quadruble 2
+
+<interactive>:47:1: error:
+    • Variable not in scope: quadruble :: t0 -> t
+    • Perhaps you meant ‘quadruple’ (line 7)
+2022-06-09 16:39:04.000506724
+>>> quadruple 2
+8
+2022-06-09 16:39:24.521716026
+>>> quadruple (2 + 3)
+20
+2022-06-09 16:40:03.851688526
+>>> :quit
+Leaving GHCi.
