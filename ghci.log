@@ -227,3 +227,160 @@ Ok, one module loaded.
 2022-06-09 16:40:03.851688526
 >>> :quit
 Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-06-16 15:02:13.248341293
+>>> take 3 [3,1,4,1,5]
+[3,1,4]
+2022-06-16 15:04:21.881162588
+>>> :e src/First.hs
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+Ok, no modules loaded.
+2022-06-16 15:10:53.671968717
+>>> :l src/First.hs
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-16 15:10:53.746149728
+>>> double
+
+<interactive>:4:1: error:
+    • No instance for (Show (Int -> Int)) arising from a use of ‘print’
+        (maybe you haven't applied a function to enough arguments?)
+    • In a stmt of an interactive GHCi command: print it
+2022-06-16 15:13:01.489235087
+>>> take (double 2) [1,2,3,4,5]
+[1,2,3,4]
+2022-06-16 15:15:15.334542484
+>>> [1 .. 10]
+[1,2,3,4,5,6,7,8,9,10]
+2022-06-16 15:20:31.887038813
+>>> :e
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+   8  
+   9  factorial :: integer -> integer
+  10  factorial n = product [1 .. n]
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+
+src/First.hs:10:15: error:
+    • No instance for (Num integer) arising from a use of ‘product’
+      Possible fix:
+        add (Num integer) to the context of
+          the type signature for:
+            factorial :: forall integer. integer -> integer
+    • In the expression: product [1 .. n]
+      In an equation for ‘factorial’: factorial n = product [1 .. n]
+   |
+10 | factorial n = product [1 .. n]
+   |               ^^^^^^^^^^^^^^^^
+
+src/First.hs:10:23: error:
+    • No instance for (Enum integer)
+        arising from the arithmetic sequence ‘1 .. n’
+      Possible fix:
+        add (Enum integer) to the context of
+          the type signature for:
+            factorial :: forall integer. integer -> integer
+    • In the first argument of ‘product’, namely ‘[1 .. n]’
+      In the expression: product [1 .. n]
+      In an equation for ‘factorial’: factorial n = product [1 .. n]
+   |
+10 | factorial n = product [1 .. n]
+   |                       ^^^^^^^^
+Failed, no modules loaded.
+2022-06-16 15:21:07.865636928
+>>> 
+2022-06-16 15:22:22.660800302
+>>> :e
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+   8  
+   9  factorial :: Integer -> Integer
+  10  factorial n = product [1 .. n]
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-16 15:22:38.11582117
+>>> factorial 3
+6
+2022-06-16 15:22:59.222864884
+>>> factorial 4
+24
+2022-06-16 15:23:13.235082862
+>>> :e
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+   8  
+   9  factorial :: Integer -> Integer
+  10  factorial n = product [1 .. n]
+  11  
+  12  average :: [Int]-> Int
+  13  average xs = sum xs `div` length xs
+  14  
+  15  ave :: [Int]-> Int
+  16  ave xs = div (sum xs) (length xs)
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-16 15:38:22.671257901
+>>> average [1,2,3,4,5]
+3
+2022-06-16 15:38:38.877880685
+>>> :t take 3 [1,2,3,4,5]
+take 3 [1,2,3,4,5] :: Num a => [a]
+2022-06-16 15:49:51.611960967
+>>> init [1 .. 5]
+[1,2,3,4]
+2022-06-16 16:07:10.410238979
+>>> :e
+   1  module First where
+   2  
+   3  double :: Int -> Int
+   4  double x = x + x
+   5  
+   6  quadruple :: Int -> Int
+   7  quadruple x = double (double x)
+   8  
+   9  factorial :: Integer -> Integer
+  10  factorial n = product [1 .. n]
+  11  
+  12  average :: [Int]-> Int
+  13  average xs = sum xs `div` length xs
+  14  
+  15  ave :: [Int]-> Int
+  16  ave xs = div (sum xs) (length xs)
+  17  
+  18  myinit :: [a] -> [a]
+  19  myinit (x:[]) = []
+  20  myinit (x:xs) = x : (init xs)
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-06-16 16:14:36.261513434
+>>> myinit [1 .. 5]
+[1,2,3,4]
+2022-06-16 16:14:49.213837049
+>>> myinit []
+*** Exception: src/First.hs:(19,1)-(20,29): Non-exhaustive patterns in function myinit
+
+2022-06-16 16:15:03.481421608
+>>> :q
+Leaving GHCi.
