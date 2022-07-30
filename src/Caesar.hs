@@ -27,3 +27,33 @@ percent n m = (fromIntegral n / fromIntegral m) * 100
 
 count :: Char -> (String -> Int)
 count x xs = length [ x' | x' <- xs, x == x']
+
+freqs :: String -> [Float]
+freqs xs = [ percent (count x xs) n | x <- ['a' .. 'z']]
+    where
+        n = length xs
+
+sample :: String
+sample = "abbcccddddeeeee"
+
+chisqr :: [Float] -> [Float] -> Float
+chisqr os es = sum [ (o - e)^2 / e | (o,e) <- zip os es ]
+
+rotate :: Int -> [a] -> [a]
+rotate n xs = drop n xs ++ take n xs
+
+table' ::[Float]
+table' = freqs sampleAngou
+
+sampleAngou :: String
+sampleAngou = "kdvnhoo lv ixq"
+
+crack :: String -> String
+crack xs = encode (-factor) xs
+    where
+        factor = head (positions (minimum chited) chited)
+        chited = [chisqr (rotate n table') table | n <- [0 .. 25]]
+        table' = freqs xs
+
+        positions :: Eq a => a -> [a] -> [Int]
+        positions x xs = [ i | (x',i)<- zip xs [0 ..], x == x']
