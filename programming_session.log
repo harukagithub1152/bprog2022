@@ -125,3 +125,100 @@ git: 'add.' is not a git command. See 'git --help'.
 The most similar command is
 	add
 ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git commit -m "1006"
+[main ef5ebfc] 1006
+ 3 files changed, 153 insertions(+)
+ create mode 100644 programming_session.log
+ create mode 100644 src/Rec.hs
+ create mode 100755 start_programming
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git push
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 2.24 KiB | 764.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:harukagithub1152/bprog2022.git
+   775222f..ef5ebfc  main -> main
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ Script started on 2022-10-13 15:09:38+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="149" LINES="13"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghci src [K/Rec.hs
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+
+[;1msrc/Rec.hs:37:17: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match expected type: [a] -> [a]
+                  with actual type: [a]
+    • The function ‘msort’ is applied to two value arguments,
+        but its type ‘[a] -> [a]’ has only one
+      In the expression: (msort ys) (msort zs)
+      In a case alternative: (ys, zs) -> (msort ys) (msort zs)
+    • Relevant bindings include
+        zs :: [a] (bound at src/Rec.hs:37:10)
+        ys :: [a] (bound at src/Rec.hs:37:6)
+        xs :: [a] (bound at src/Rec.hs:36:7)
+        msort :: [a] -> [a] (bound at src/Rec.hs:34:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m37 |[0m[0m     (ys, zs) -> [;1m[31m(msort ys) (msort zs)[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m                 ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+Failed, no modules loaded.
+2022-10-13 15:10:00.951662078
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+Ok, one module loaded.
+2022-10-13 15:10:52.750630878
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+Ok, one module loaded.
+2022-10-13 15:11:41.738123038
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+Ok, one module loaded.
+2022-10-13 15:12:18.418251351
+[?1h=>>> sorttesut[K[Kt
+[?1l>[3,1,4,1,5,9,2,6,5,3,5,8,9]
+2022-10-13 15:12:32.907419167
+[?1h=>>> msort sorttest
+[?1l>[1,1,2,3,3,4,5,5,5,6,8,9,9]
+2022-10-13 15:13:46.142332607
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+Ok, one module loaded.
+2022-10-13 15:50:04.013122978
+[?1h=>>> twiv[Kce inc 0
+[?1l>2
+2022-10-13 15:50:40.128236018
+[?1h=>>> twice twiice [K[K[K[Kce inc 0
+[?1l>4
+2022-10-13 15:52:13.778146538
+[?1h=>>> twicw[Ke twice twice inc 0
+[?1l>16
+2022-10-13 15:53:20.385476058
+[?1h=>>> twice twice twice twice inc 0
+[?1l>65536
+2022-10-13 15:55:46.176944891
+[?1h=>>> twice twice twice twice inc 0[K[K[K[K[Ktwice inc 0
+[?1l>*** Exception: stack overflow
+2022-10-13 15:59:14.249995161
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+Ok, one module loaded.
+2022-10-13 16:06:00.339271282
+[?1h=>>> map inc e[Ksorttest[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksample
+[?1l>
+[;1m<interactive>:13:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: sample[0m[0m
+2022-10-13 16:06:55.039578363
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling Rec              ( src/Rec.hs, interpreted )
+Ok, one module loaded.
+2022-10-13 16:06:59.933048014
+[?1h=>>> sample
+[?1l>[3,1,4,1,5,9,2,6,5,3,5,8,9]
+2022-10-13 16:07:03.698643163
+[?1h=>>> map o[Kinc sample
+[?1l>[4,2,5,2,6,10,3,7,6,4,6,9,10]
+2022-10-13 16:07:12.799941119
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git ddd[K[K[Kadd .
