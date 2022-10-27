@@ -236,3 +236,39 @@ remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[K
 To github.com:harukagithub1152/bprog2022.git
    ef5ebfc..196bc15  main -> main
 ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git dd [K[K[Kadd .
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git commit -m "10132[K"
+[main e9dfaa2] 1013
+ 1 file changed, 14 insertions(+)
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 657 bytes | 657.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:harukagithub1152/bprog2022.git
+   196bc15..e9dfaa2  main -> main
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ Script started on 2022-10-27 16:01:09+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="159" LINES="15"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ stack exec -- doctest src [K/ [KHOF.hs
+Examples: 1  Tried: 0  Errors: 0  Failures: 0src/HOF.hs:8: failure in expression `bin2int [1,0,1,1]'
+expected: 15
+ but got: 13
+           ^
+
+Examples: 1  Tried: 1  Errors: 0  Failures: 1
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ sa[Ktack install [K[K[K[K[K[K[K[K[K[K[K[K[K[Ksat[K[K[Kstack install doctest
+[0mCopying from /home/haruka/.stack/snapshots/x86_64-linux-tinfo6/5bbd455e437e1d3764ab86da4dcae571f3aed33f8ff6ce33676b830c11fd1bff/9.0.2/bin/doctest to /home/haruka/.local/bin/doctest[0m
+[0m[0m
+[0mCopied executables to /home/haruka/.local/bin:[0m
+[0m- doctest[0m
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ doc [Ktest src?[K/HOF.hs
+Examples: 1  Tried: 0  Errors: 0  Failures: 0src/HOF.hs:8: failure in expression `bin2int [1,0,1,1]'
+expected: 15
+ but got: 13
+           ^
+
+Examples: 1  Tried: 1  Errors: 0  Failures: 1
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ doctest src/HOF.hs
+Examples: 1  Tried: 0  Errors: 0  Failures: 0Examples: 1  Tried: 1  Errors: 0  Failures: 0
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
