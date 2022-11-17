@@ -272,3 +272,183 @@ Examples: 1  Tried: 1  Errors: 0  Failures: 1
 ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ doctest src/HOF.hs
 Examples: 1  Tried: 0  Errors: 0  Failures: 0Examples: 1  Tried: 1  Errors: 0  Failures: 0
 ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git commit "1027"[C "1027"- "1027"m "1027"[C[C[C[C[C[C[C
+[main 5beef76] 1027
+ 2 files changed, 53 insertions(+)
+ create mode 100644 src/HOF.hs
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git push
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.20 KiB | 409.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:harukagithub1152/bprog2022.git
+   e9dfaa2..5beef76  main -> main
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ Script started on 2022-11-10 15:52:15+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="159" LINES="15"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghixi[K[K[Kci
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-11-10 15:52:24.374203315
+[?1h=>>> :l
+[?1l>Ok, no modules loaded.
+2022-11-10 15:52:29.741202313
+[?1h=>>> :l src/HOF .hs.hs[K[3D
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-10 15:52:55.118110204
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ stack [K[K[K[K[K[Kwhich doctest
+/home/haruka/.local/bin/doctest
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ doctest src/HOF.hs
+Examples: 1  Tried: 0  Errors: 0  Failures: 0Examples: 1  Tried: 1  Errors: 0  Failures: 0
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ Script started on 2022-11-17 15:21:46+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="149" LINES="15"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghci [K
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-11-17 15:22:03.324823761
+[?1h=>>> :r /l[K[K[K[Kl src?/?[K[K[K/HOF.hs
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+
+[;1msrc/HOF.hs:27:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    The type signature for ‘bit2int’ lacks an accompanying binding
+      Perhaps you meant ‘bin2int’ (Defined at src/HOF.hs:28:1)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m27 |[0m[0m [;1m[31mbit2int[0m[0m :: [Bit] -> Int
+[;1m[34m   |[0m[0m[;1m[31m ^^^^^^^[0m[0m
+Failed, no modules loaded.
+2022-11-17 15:22:27.701255319
+[?1h=>>> :l src/HOF.hs
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-17 15:22:55.690453681
+[?1h=>>> bit2int [1,0,1,1,0,0,0,0] [K
+[?1l>
+[;1m<interactive>:3:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: bit2int :: [a0] -> t
+    • Perhaps you meant ‘bin2int’ (line 28)[0m[0m
+2022-11-17 15:23:24.289000303
+[?1h=>>> :r
+[?1l>Ok, one module loaded.
+2022-11-17 15:23:41.176726015
+[?1h=>>> bit2int [1,0,1,1,0,0,0,0] 
+[?1l>
+[;1m<interactive>:5:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: bit2int :: [a0] -> t
+    • Perhaps you meant ‘bin2int’ (line 28)[0m[0m
+2022-11-17 15:23:45.308760828
+[?1h=>>> bin2int [1,0,1,1,0,0,0,0]
+[?1l>13
+2022-11-17 15:24:05.153228498
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ stack exec -- doctest src/HOF.hs
+Examples: 2  Tried: 0  Errors: 0  Failures: 0Examples: 2  Tried: 1  Errors: 0  Failures: 0src/HOF.hs:25: failure in expression `bin2int [1,0,1,1,0,0,0,0]'
+expected: 
+ but got: 13
+          ^
+
+Examples: 2  Tried: 2  Errors: 0  Failures: 1
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ stack exec -- doctest src/HOF.hs
+Examples: 1  Tried: 0  Errors: 0  Failures: 0src/HOF.hs:21: failure in expression `bin2int [1,0,1,1,0,0,0,0]'
+expected: 
+ but got: 13
+          ^
+
+Examples: 1  Tried: 1  Errors: 0  Failures: 1
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ stack exec -- doctest src/HOF.hs
+Examples: 1  Tried: 0  Errors: 0  Failures: 0Examples: 1  Tried: 1  Errors: 0  Failures: 0
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ stack exec -- doctest src/HOF.hs
+Examples: 2  Tried: 0  Errors: 0  Failures: 0Examples: 2  Tried: 1  Errors: 0  Failures: 0Examples: 2  Tried: 2  Errors: 0  Failures: 0
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghci
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-11-17 15:37:42.229076704
+[?1h=>>> :l src/HOF.hs
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-17 15:37:56.033838808
+[?1h=>>> int2bin 13
+[?1l>[1,0,1,1]
+2022-11-17 15:38:04.491192035
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-17 15:45:55.367653169
+[?1h=>>> make8 [K[K[K[K[K[Kint2bim[Kn 13
+[?1l>[1,0,1,1]
+2022-11-17 15:46:20.178665339
+[?1h=>>> it
+[?1l>[1,0,1,1]
+2022-11-17 15:46:46.851927472
+[?1h=>>> make8 it
+[?1l>[1,0,1,1,0,0,0,0]
+2022-11-17 15:47:33.338740829
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-17 15:53:33.188081534
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghci[K[K[K[K[Kstack exec -- doctest src/HOF.hs
+Examples: 3  Tried: 0  Errors: 0  Failures: 0Examples: 3  Tried: 1  Errors: 0  Failures: 0Examples: 3  Tried: 2  Errors: 0  Failures: 0Examples: 3  Tried: 3  Errors: 0  Failures: 0
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ :r[K[Klghci
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-11-17 16:03:53.132747617
+[?1h=>>> :l src/HOf[KF.hs
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-17 16:04:05.673781736
+[?1h=>>> encode ""a"b"c"
+[?1l>[1,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,1,1,0,0,0,1,1,0]
+2022-11-17 16:04:15.137436379
+[?1h=>>> ord ''a'
+[?1l>97
+2022-11-17 16:05:07.892651457
+[?1h=>>> bin2int [1,0,0,0,0,1,1,0]
+[?1l>97
+2022-11-17 16:05:52.366702148
+[?1h=>>> ord ''c'
+[?1l>99
+2022-11-17 16:06:45.494751519
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+
+[;1msrc/HOF.hs:48:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Couldn't match type ‘[Char]’ with ‘Int’
+      Expected: [Bit] -> Int
+        Actual: [Bit] -> [Char]
+    • In the expression: map (chr . bin2int) . chop8
+      In an equation for ‘decode’: decode = map (chr . bin2int) . chop8[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m48 |[0m[0m decode =  [;1m[31mmap (chr . bin2int) . chop8[0m[0m
+[;1m[34m   |[0m[0m[;1m[31m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+Failed, no modules loaded.
+2022-11-17 16:11:32.231031346
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+
+[;1msrc/HOF.hs:48:16: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: char :: Int -> b0
+    • Perhaps you meant ‘chr’ (imported from Data.Char)[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m48 |[0m[0m decode =  map ([;1m[31mchar[0m[0m . bin2int) . chop8
+[;1m[34m   |[0m[0m[;1m[31m                ^^^^[0m[0m
+Failed, no modules loaded.
+2022-11-17 16:12:08.175274707
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-17 16:12:43.192416595
+[?1h=>>> encode ""a"b"c"
+[?1l>[1,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,1,1,0,0,0,1,1,0]
+2022-11-17 16:13:07.107124244
+[?1h=>>> decode it
+[?1l>"abc"
+2022-11-17 16:13:12.099531666
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
