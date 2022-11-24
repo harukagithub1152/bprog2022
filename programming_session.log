@@ -452,3 +452,130 @@ Ok, one module loaded.
 [?1h=>>> :q
 [?1l>Leaving GHCi.
 ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git commit -m ""1"1"1"7"
+[main e05aeb1] 1117
+ 2 files changed, 221 insertions(+), 6 deletions(-)
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git push
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 2.25 KiB | 577.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:harukagithub1152/bprog2022.git
+   5beef76..e05aeb1  main -> main
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ Script started on 2022-11-24 14:51:03+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="149" LINES="15"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghci
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2022-11-24 14:51:07.796532561
+[?1h=>>> :l src/HOF.hs
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-24 14:51:23.627416955
+[?1h=>>> encode ""H"a"s"k"e"l"l"
+[?1l>[0,0,0,1,0,0,1,0,1,0,0,0,0,1,1,0,1,1,0,0,1,1,1,0,1,1,0,1,0,1,1,0,1,0,1,0,0,1,1,0,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,0]
+2022-11-24 14:51:40.137023918
+[?1h=>>> decode """[K"[K"[K[C[Ke it
+[?1l>"Haskell"
+2022-11-24 14:51:55.845435359
+[?1h=>>> :i IO String
+[?1l>type IO :: * -> *
+newtype IO a
+  = GHC.Types.IO (GHC.Prim.State# GHC.Prim.RealWorld
+                  -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #))
+  	-- Defined in ‘GHC.Types’
+instance Applicative IO -- Defined in ‘GHC.Base’
+instance Functor IO -- Defined in ‘GHC.Base’
+instance Monad IO -- Defined in ‘GHC.Base’
+instance Monoid a => Monoid (IO a) -- Defined in ‘GHC.Base’
+instance Semigroup a => Semigroup (IO a) -- Defined in ‘GHC.Base’
+instance MonadFail IO -- Defined in ‘Control.Monad.Fail’
+type String :: *
+type String = [Char]
+  	-- Defined in ‘GHC.Base’
+2022-11-24 15:19:27.979141107
+[?1h=>>> :i Handole][K
+[?1l>
+[;1m<interactive>:1:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Not in scope: ‘Handole’[0m[0m
+2022-11-24 15:20:24.680063186
+[?1h=>>> import System.IO
+[?1l>2022-11-24 15:20:38.501748173
+[?1h=>>> :i IO
+[?1l>type IO :: * -> *
+newtype IO a
+  = GHC.Types.IO (GHC.Prim.State# GHC.Prim.RealWorld
+                  -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #))
+  	-- Defined in ‘GHC.Types’
+instance Applicative IO -- Defined in ‘GHC.Base’
+instance Functor IO -- Defined in ‘GHC.Base’
+instance Monad IO -- Defined in ‘GHC.Base’
+instance Monoid a => Monoid (IO a) -- Defined in ‘GHC.Base’
+instance Semigroup a => Semigroup (IO a) -- Defined in ‘GHC.Base’
+instance MonadFail IO -- Defined in ‘Control.Monad.Fail’
+2022-11-24 15:20:56.696708875
+[?1h=>>> 
+[?1l>2022-11-24 15:20:56.728689054
+[?1h=>>> :i IO[K[K[K[K[KTrue == False
+[?1l>False
+2022-11-24 15:37:48.946614356
+[?1h=>>> True < False
+[?1l>False
+2022-11-24 15:38:00.082529747
+[?1h=>>> True > Flse
+[?1l>
+[;1m<interactive>:11:8: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Data constructor not in scope: Flse :: Bool
+    • Perhaps you meant ‘False’ (imported from Prelude)[0m[0m
+2022-11-24 15:38:09.254048301
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-24 15:59:17.19667887
+[?1h=>>> sore[Ky[Kt votes
+[?1l>
+[;1m<interactive>:13:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Variable not in scope: sort :: [String] -> t
+    • Perhaps you meant ‘sqrt’ (imported from Prelude)[0m[0m
+2022-11-24 15:59:30.286571113
+[?1h=>>> :r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+Ok, one module loaded.
+2022-11-24 15:59:49.153897602
+[?1h=>>> sort votes
+[?1l>["Blue","Blue","Blue","Green","Red","Red"]
+2022-11-24 15:59:59.867301054
+[?1h=>>> group it
+[?1l>[["Blue","Blue","Blue"],["Green"],["Red","Red"]]
+2022-11-24 16:00:06.984994157
+[?1h=>>> map head it
+[?1l>["Blue","Green","Red"]
+2022-11-24 16:00:51.4995031
+[?1h=>>> sort votes [C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Khoge = sote[K[Krt[K[K[K[Kmap ((,) <*> length) . sort [K[K[K[K[Kgroup . sort  <*> length) . group . sort[27D. <*> length) . group . sort[27D  <*> length) . group . sort[27Dh <*> length) . group . sort[27De <*> length) . group . sort[27Da <*> length) . group . sort[27Dd <*> length) . group . sort[27D  <*> length) . group . sort[27D <*> length) . group . sort[K[27D
+[?1l>2022-11-24 16:03:29.458519969
+[?1h=>>> hoge voute[K[K[Ktes
+[?1l>[("Blue",3),("Green",1),("Red",2)]
+2022-11-24 16:03:44.482812139
+[?1h=>>> sortBy [K[K[K[K[K[K[Kimport Date[Ka.Ord
+[?1l>2022-11-24 16:04:45.107957916
+[?1h=>>> sortBy (flip (comparing sud)) itud)) it[K[7D[Cd)) it[K[6Dsd)) it[6Dnd)) it[6D
+[?1l>[("Blue",3),("Red",2),("Green",1)]
+2022-11-24 16:05:19.074722061
+[?1h=>>> :q[K[K;[K:r
+[?1l>[1 of 1] Compiling HOF              ( src/HOF.hs, interpreted )
+
+[;1msrc/HOF.hs:5:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Could not find module ‘Data.Votes’
+    Perhaps you meant
+      Data.Bits (from base-4.15.1.0)
+      Data.Void (from base-4.15.1.0)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m5 |[0m[0m [;1m[31mimport Data.Votes[0m[0m
+[;1m[34m  |[0m[0m[;1m[31m ^^^^^^^^^^^^^^^^^[0m[0m
+Failed, no modules loaded.
+2022-11-24 16:15:43.179136383
+[?1h=>>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git ha[K[Kadd /[K/[K.

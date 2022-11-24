@@ -1,6 +1,8 @@
 module HOF where
 
 import Data.Char
+import Data.List
+import Data.Votes
 
 type Bit = Int
 
@@ -50,3 +52,13 @@ decode =  map (chr . bin2int) . chop8
 chop8 :: [Bit] -> [[Bit]]
 chop8[] = []
 chop8 xs = take 8 xs : chop8 (drop 8 xs)
+
+---
+
+votes :: [String]
+votes = ["Red", "Blue", "Green", "Blue", "Blue", "Red"]
+
+results :: [String] -> [(String, Int)]
+results = sortBy (flip (comparing snd)) . map ((,) . head <*> length) . group . sort
+
+-- ( f <*> g ) x = f x (g x)
