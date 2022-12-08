@@ -100,3 +100,4 @@ winner' bs = case rank (filter (not . null) bs) of
     _       -> error "impossible!"
     
 -- ( f <*> g ) x = f x (g x)
+
