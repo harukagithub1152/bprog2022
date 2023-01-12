@@ -597,4 +597,50 @@ Total 5 (delta 4), reused 0 (delta 0)
 remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
 To github.com:harukagithub1152/bprog2022.git
    e05aeb1..ed8116b  main -> main
-]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ 
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ Script started on 2023-01-12 15:39:40+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="53" LINES="15"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ ghci
+
+Command 'ghci' not found, but can be installed with:
+
+sudo apt install ghc
+
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ lghci
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
+2023-01-12 15:40:00.02493373
+[?1h=>>> :l src?[K/[K[K[K[K[K[K[K>>> :r
+[?1l>Ok, no modules loaded.
+2023-01-12 16:04:18.753424843
+[?1h=>>> value (ADD[K[Kdd (a[KS[K[K(Add (Val 2) (Val 4[K3)) (Val 4))
+[?1l>
+[;1m<interactive>:2:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: value :: t7 -> t[0m[0m
+
+[;1m<interactive>:2:8: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Data constructor not in scope: Add :: t5 -> t6 -> t7
+    • Perhaps you meant variable ‘odd’ (imported from Prelude)[0m[0m
+
+[;1m<interactive>:2:13: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    • Data constructor not in scope: Add :: t3 -> t4 -> t5
+    • Perhaps you meant variable ‘odd’ (imported from Prelude)[0m[0m
+
+[;1m<interactive>:2:18: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Data constructor not in scope: Val :: t2 -> t3[0m[0m
+
+[;1m<interactive>:2:26: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Data constructor not in scope: Val :: t1 -> t4[0m[0m
+
+[;1m<interactive>:2:35: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Data constructor not in scope: Val :: t0 -> t6[0m[0m
+2023-01-12 16:05:16.830509212
+[?1h=>>> :r
+[?1l>Ok, no modules loaded.
+2023-01-12 16:14:23.648661829
+[?1h=>>> value sample
+[?1l>
+[;1m<interactive>:4:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: value :: t0 -> t[0m[0m
+
+[;1m<interactive>:4:7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: sample[0m[0m
+2023-01-12 16:14:35.52528239
+[?1h=>>> >>> >>> >>> >>> >>> >>> :q
+[?1l>Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
