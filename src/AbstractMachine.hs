@@ -1,7 +1,7 @@
 module AbstractMachine where
 
 data Expr
-    = val Int
+    = Val Int
     | Add Expr Expr
     deriving (Eq, Show)
 
@@ -17,7 +17,7 @@ type Cont = [Op]
 
 data Op
     = EVAL Expr
-    | ADD int
+    | ADD Int
     deriving (Eq, Show)
 
 eval :: Expr -> Cont -> Int

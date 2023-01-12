@@ -644,3 +644,132 @@ Loaded GHCi configuration from /home/haruka/bprog2022/.ghci
 [?1h=>>> >>> >>> >>> >>> >>> >>> :q
 [?1l>Leaving GHCi.
 ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git add .
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git commit -m ""u"p"d"a"t"e" [A]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "o"[1P"0"1"1"2"
+[main 83ec560] update 0112
+ 2 files changed, 82 insertions(+), 1 deletion(-)
+ create mode 100644 src/AbstractMachine.hs
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ git pish[K[K[Kush
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.14 KiB | 1.14 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:harukagithub1152/bprog2022.git
+   c51061e..83ec560  main -> main
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ [K]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ bigin
+bigin: command not found
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ kj[K[Kbegin
+Script started, file is programming_session.log
+Script started on 2023-01-12 16:25:03+09:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="10"]
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ llgghhiivv[K[K[K[Kccii
+
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuratiLoaded GHCi configuration from /home/haruka/bprog2022/.ghci
+on from /home/haruka/bprog2022/.ghci
+2023-01-12 16:25:19.531913955
+2023-01-12 16:25:19.531913955
+[?1h=[?1h=>>> >>> vvaallii[K[Kuuee  ssaammppllee
+
+[?1l>[?1l>
+[;1m<interactive>:1:1: [;1m[31
+[;1m<interactive>:1:1: [;1m[31merror:[0m[0m[;1mmerror:[0m[0m[;[0m[0m[;1m1m[0m[0m[;1m Variable not in scope: value :: t0 -> t[0m[0m
+
+[;1m<interactive>:1:7: [ Variable not in scope: value :: t0 -> t[0m[0m
+
+[;1m<interactive>:1:7: ;[;1m1m[31merror:[0m[0m[;1m[[31merror:[0m[0m[;1m[0m0m[0m[;1m[0m[;1m Variable not in scope: sample[0m[0m
+ Variable not in scope: sample[0m[0m
+2023-01-12 16:25:422023-01-12 16:25:42.109316227
+.109316227
+[?1h=[?1h=>>> >>> >>> >>> ::rr
+[?1l>
+[?1l>Ok, no modules Ok,loaded.
+ no modules loaded.
+2023-01-12 16:31:44.607275406
+2023-01-12 16:31:44.607275406
+[?1h=[?1h=>>> >>> vvaalluuee  ssaammppllww[K[Kee
+[?1l>
+[?1l>
+[;1m<interactive>
+[;1m<interactive>:3:1: [;1m[31merror:[0m[0m[;:3:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m1m[0m[0m[;1m Variable not in scope: value :: t0 -> t[0m[0m
+
+ Variable not in scope: value :: t0 -> t[0m[0m
+
+[;1m<interacti[;1m<interactive>:ve>:3:7: 3:7: [;[1m[31m;1m[31merror:[0m[0m[error:[0m[0m[;1m[0;1m[0m[0m[;1mm[0m[;1m Variable not in scope: sample[0m[0m
+ Variable not in scope: sample[0m[0m
+2023-01-12 16:32:202308.984084499
+-01-12 16:32:08.984084499
+[?1h=[?1h=>>> >>> ::rr
+[?1l>
+[?1l>Ok, no modules Ok, no modules loaded.
+loaded.
+2023-01-12 16:32:59.483202603
+2023-01-12 16:32:59.483202603
+[?1h=[?1h=>>> >>> vvaalluuee  ssaammppllee
+
+[?1l>[?1l>
+[;1m<intera
+[;1m<interactive>:5:1: [;1mctive>:5:1: [;1m[31merror:[0m[0m[;1m[0m[31merror:[0m[0m[0m[;1m[;1m[0m[0m[;1m Variable not in scope: value Variable not in scope: value :: t0 -> t[0m[0m
+
+ :: t0 -> t[0m[0m
+
+[;1m<interac[;1m<interactive>:5:7: [;1m[31merror:tive>:5:7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m[0m[0m[;1m[0m[0m[;1m Variable not in scope: sample[0m[0m
+ Variable not in scope: sample[0m[0m
+2023-01-12 16:33:152023-01-12 16:33:15.582625229.58262522
+9
+[?1h=[?1h=>>> >>> iinntteerrpp  ssaammppllee
+
+[?1l>[?1l>
+[;1m<interactive>:6:1: [;1m[31merror:[0m[0m[;1m[0m[
+[;1m<interactive>:6:1: [;0m1m[31merror:[0m[0m[;1m[0m[[0m[;1m;1m Variable not in scope: interp :: t0 -> t Variable not in scope: interp :: t0 -> t[0m[0m
+
+[;1m<in[0m[0m
+
+te[;1m<interactive>:6:8ractive>:6:8: [;1m[31merror:[0: [;1m[0m[m[31merror:[0;1mm[0m[;1m[0m[0m[;1m[0m[0m[;1m Variable not in scope: sample[0m[0m
+2023-01-12 16:33: Variable not in scope: sample[0m[0m
+31.22023-01-12 16:33:3115.23115312962296
+2
+[?1h=[?1h=>>> >>> ::rr
+[?1l>Ok, no modules loaded.
+2023-01-12 16:35:25.143436773
+[?1h=>>> 
+[?1l>Ok, no modules loaded.
+2023-01-12 16:35:25.143436773
+[?1h=>>> iinntteerrpp  ssaammppllee
+
+[?1l>[?1l>
+[;1m<inter
+[;1m<interactive>:8:1: [;1m[31merror:active>:8:1: [;1m[31merror:[0m[0m[;1m[[0m[0m[;1m[0m0m[0m[;1m[0m[;1m Variable not in scope: interp :: t0  Variable not in scope: interp :: -> tt0 -> t[0m[0m
+
+[0m[0m
+
+[;1m<[;1mintera<ctiveintera>:ctive8>:8:8: [;1m[:8: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m31merror:[0m[0m[;1m[0m[0m[;1m Variable not in scope: sample[0m[0m
+ Variable not in scope: sample[0m[0m
+2023-01-12 16:35:33.715144406
+2023-01-12 16:35:33.715144406
+[?1h=[?1h=>>> >>> ::rr
+
+[?1l>[?1l>Ok, no modules loaded.
+Ok, no modules loaded.
+2023-01-12 16:38:42.512932023-01-12 16:38:42.512932123
+2123
+[?1h=[?1h=>>> >>> vvaalluuee  ssaammppllee
+
+[?1l>[?1l>
+[;1m<interactive>:10:1: [;1m[31merror:[0m[0m[;1
+[;1m<interactive>:10:1: [;1m[31merror:[0m[0m[;1m[0m[0m[;1mm[0m[0m[;1m Variable not in scope: value :: t0 -> t[0m[ Variable not in scope: value :: t0 -> t[0m[0m
+
+[;10m
+
+m[;1<interactm<inteivractive>:10:7e>:10: :7: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m[31merror:[0m[0m[;1m[0m[[;1m0m[;1m Variable not in scope: sample[0m[0m
+ Variable not in scope: sample[0m[0m
+2023-01-12 16:38:50.514056382
+2023-01-12 16:38:50.514056382
+[?1h=[?1h=>>> >>> >>> >>> ::qq
+
+[?1l>[?1l>Leaving GHCi.
+Leaving GHCi.
+]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ ]0;haruka@DESKTOP-LTV8VC4: ~/bprog2022[01;32mharuka@DESKTOP-LTV8VC4[00m:[01;34m~/bprog2022[00m$ ggiitt  aadddd  //[1P/[1P/[C[C[K[K  ..
+
